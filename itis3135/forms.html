@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ITIS 3135 </title>
+	<title>ITIS 3135 || Annabella Wilkins || HTML Form || HTML Table</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Unbounded&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+	<header>
+		<h1>Wilkins, Annabella A. || The Wild Westiepoo</h1>
+		<nav>
+			<a href="index.html">Home</a>
+			<a href="introduction.html"> Introduction to HTML</a>
+			<a href="">Contract</a>
+			<a href="">Tables</a>
+			<a href="">Form</a>
+		</nav>
+	</header>
+	<main>
+		<form action="#" method="post" name="profile">
+
+			<div><label for="name"> Name</label><input type="text" name="name" id="name" required minlength="3"
+					maxlength="32"></div>
+
+			<div>
+				<label for="phone">Phone Number</label><input type="tel" name="phone" id="phone" required
+					pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+				<span class="form_help">ex. 123-456-7890</span>
+			</div>
+
+			<div><label for="email">Email Address</label><input type="email" name="email" id="email" required></div>
+
+			<div>
+				<input type="checkbox" name="knows_css" id="knows_css"><label for="knows_css">Do you know
+					CSS?</label><br>
+				<input type="checkbox" name="knows_html" id="knows_html"><label for="knows_html">Do you know
+					HTML?</label><br>
+				<input type="checkbox" name="knows_js" id="knows_js"><label for="knows_js">Do you know JS?</label>
+			</div>
+
+			<div>
+				<p>What is your favorite web technology?</p>
+				<input type="radio" name="favorite_tech" id="css"><label for="css">CSS</label><br>
+				<input type="radio" name="favorite_tech" id="html"><label for="html">HTML</label><br>
+				<input type="radio" name="favorite_tech" id="js"><label for="js">JS</label>
+			</div>
+
+			<div>
+				<label for="cell_type">What cell phone do you use?</label>
+				<select name="cell_type" id="cell_type">
+					<option value="ios">Apple</option>
+					<option value="android">Android</option>
+					<option value="linux">Linux</option>
+					<option value="other">Other</option>
+				</select>
+			</div>
+
+			<div>
+				<input type="reset" value="Reset Form">
+				<input type="submit" value="Send Preferences">
+			</div>
+
+
+
+		</form>
+	</main>
+	<footer>
+		<nav>
+			<a href="../">CLT Home</a>
+			<a href="">Git Hub</a>
+			<a href="">Git Hub Pages</a>
+			<a href="">freecodecamp</a>
+			<a href="">CodeAcademy</a>
+			<a href="">Linkedin</a>
+		</nav>
+	</footer>
+</body>
+
+</html>
